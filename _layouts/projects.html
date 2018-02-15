@@ -1,0 +1,72 @@
+--- 
+layout: wrapper
+---
+
+<article class="markdown-body">
+  {{ content }}
+</article>
+
+{% if page.reusability %}
+<aside>
+
+    <h3>Reusability: <span class="score reusability-{{ page.reusability }}">{{ page.reusability }}</span></h3>
+
+    {% case page.reusability %}
+      {% when 1 %}
+      <h4>Custom, opaque</h4>
+      <p>
+        This project is very specific and not easy to learn from.
+      </p>
+      {% when 2 %}
+      <h4>Custom, reference</h4>
+      <p>
+        This project is specific to our case and documented, can be used to learn from.
+      </p>
+      {% when 3 %}
+      <h4>Adaptable</h4>
+      <p>
+        This project is documented and possible to adapt.
+      </p>
+      {% when 4 %}
+      <h4>Reusable, configured</h4>
+      <p>
+        This project is configured specifically, easily reconfigurable. 
+      </p>
+      {% when 5 %}
+      <h4>Reusable</h4>
+      <p>
+        This project is useful for anyone.
+      </p>
+    {% endcase %}
+
+    {% if page.reusability < 4 %}
+    <h4>Let us help you implement</h4>
+
+    <p>Our goal is to make as much of the code we develop as reusable as possible. We would love to collaborate with you on implementing it in your situation, improving the reusability in the process. File an issue in the GitHub repository for help.</p>
+    {% endif %}
+
+    <ul>
+      <li><a href="{{site.baseUrl}}/guides/track-open-source-health/">More on: How we track Open Source health</a></li>
+    </ul>
+
+  </aside>
+{% endif %}
+
+{% assign projects = site.pages | where: "layout", "projects" %}
+
+{% comment %} Don't display this section if there is only one result {% endcomment %}
+{% if projects[1] %}
+
+<h2 class="section-header"><a href=""><a href="{{ site.baseurl }}/projects/">All Projects</a></a></h2>
+
+<section class="cards">
+  {% for page in projects %} {% if page.name != "index.md" %}
+  <a href="{% if page.link %}{{page.link}}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}">
+    <h3>{{ page.title }}</h3>
+    <p>{{ page.abstract }}</p>
+    {% if page.link %}<small>{{ page.link }}</small>{% endif %}
+  </a>
+  {% endif %} {% endfor %}
+</section>
+
+{% endif %}

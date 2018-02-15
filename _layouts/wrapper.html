@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% if page.title %}{{ page.title }} |{% else %}{% endif %} Gemeente Haarlem</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/github-markdown.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+  <link rel="icon" href="{{ site.baseurl }}/assets/hlm-icon-192x192.png">
+</head>
+
+<body>
+
+  <header>
+
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/foot_logo_haarlem_2018.png" alt="Gemeente Haarlem" id="city-logo">
+    </a>
+
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="{{ site.baseurl }}/">Home</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/projects/">Projects</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    {{ content }}
+
+  </main>
+
+  <footer>
+    <article>
+      <h3>
+          Gemeente Haarlem
+      </h3>
+      <ul>
+        <li>
+          <a href="{{ site.baseurl }}/">Home</a>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <h3>
+        <a href="{{ site.baseurl }}/projects/">Projects</a>
+      </h3>
+      <ul>
+          {% for page in site.pages %} {% if page.abstract and page.title and page.name != "index.md" %}
+          <li>
+              <a href="{% if page.link %}{{page.link}}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}">{{ page.title }}</a>
+          </li>
+          {% endif %} {% endfor %}
+        </ul>
+    </article>
+    <article>
+      <h3>
+        <a href="mailto:antwoord@haarlem.nl">Contact</a>
+      </h3>
+      <ul>
+        <li>
+          <a href="https://opendata.haarlem.nl">opendata.haarlem.nl</a>
+        </li>
+        <li>
+          <a href="http://github.com/haarlem">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:antwoord@haarlem.nl">E-mail</a>
+        </li>
+      </ul>
+    </article>
+  </footer>
+
+</body>
+
+</html>
