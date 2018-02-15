@@ -30,6 +30,9 @@
       <li>
         <a href="{{ site.baseurl }}/projects/">Projects</a>
       </li>
+      <li>
+        <a href="{{ site.baseurl }}/guides/">Guides</a>
+      </li>
     </ul>
   </nav>
 
@@ -61,6 +64,18 @@
           </li>
           {% endif %} {% endfor %}
         </ul>
+    </article>
+    <article>
+      <h3>
+        <a href="{{ site.baseurl }}/guides/">Guides</a>
+      </h3>
+      <ul>
+        {% for page in site.pages %} {% if page.explains and page.title and page.name != "index.md" %}
+        <li>
+          <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
     </article>
     <article>
       <h3>
