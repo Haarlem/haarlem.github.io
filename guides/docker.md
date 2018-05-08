@@ -6,7 +6,7 @@ explains: Hoe kunnen de Docker images van onze projecten worden gebruikt
 
 ## Zaakregistratiecomponent en Alfresco
 
-Deze set van Docker images kan gebruikt worden voor demonstratie doeleinden en door ontwikkelaars. De images zijn **niet** geoptimaliseerd voor gebruik in productie.
+Deze set van Docker images kan gebruikt worden voor demonstratie doeleinden en door ontwikkelaars. De images zijn **niet** geoptimaliseerd voor gebruik in productie. Op dit moment zijn Docker images beschikbaar voor versie 0.9.7 van de zaakregistratie component.
 
 Voor het gebruik van deze images zijn [Docker](https://www.docker.com/community-edition "Docker") en Docker-compose benodigd.
 
