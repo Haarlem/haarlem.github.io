@@ -51,6 +51,12 @@ services:
 
 ```
 
+Indien men Docker op Microsoft Windows gebruikt moeten de *nix* paden die gebruikt worden in het bovenstaande script geconverteerd worden. Voer hiertoe het volgende commando uit alvorens docker-compose.
+
+```
+$Env:COMPOSE_CONVERT_WINDOWS_PATHS=1
+```
+
 Voer vanuit deze directory vervolgens het commando *docker-compose up -d*  commando uit:
 
 ```
