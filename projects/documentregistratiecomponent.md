@@ -1,17 +1,9 @@
 ---
-abstract: Documentregistratiecomponent
+abstract: Alfresco module for storing documents according to the TMLO standard
 ---
 
-# Alfresco Repository module
+# Documentregistratiecomponent
 
-Dit project bevat het content model van de gemeente Haarlem.
-Het content model is een verzameling 'custom' velddefinities in xml-formaat.
+A module for the Open Source [Alfresco content management system](https://www.alfresco.com/) to store content and metadata compatible with the [TMLO (Toepassingsprofiel Metadatering Lokale Overheden) standard](https://vng.nl/files/vng/20140508-toepassingsprofiel-metadatering.pdf) published by Archief2020 and required to be implemented by Dutch municipalities.
 
-Het build proces produceert een zgn .amp file (alfresco module package) en een .jar file
-
-Beiden kunnen gebruikt worden om een deploy te doen.
-
-Deploy locatie van de jar file : alfresco\tomcat\webapps\alfresco\WEB-INF\lib
-Een alternatieve locatie is : alfresco\modules\platform
-
-Voor het deployen van amp files: zie online alfresco documentatie: http://docs.alfresco.com/5.2/tasks/amp-install.html
+For more information you can view the source code on [GitHub: Haarlem/documentregistratiecomponent](https://github.com/Haarlem/documentregistratiecomponent)
