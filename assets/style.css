@@ -1,9 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Avenir,Arial,sans-serif;
+  font-family: Arial,sans-serif;
   font-weight: 500;
-  background-color: #da2738;
+  background-color: #eee;
   color: #434343;
   line-height: 1.5;
   min-height: 100vh;
@@ -12,13 +12,21 @@ html, body {
 a:link, a:visited {
   font-weight: bold;
   color: #000;
-  text-decoration: none;
+  text-decoration: underline;
+}
+a:link {
+  text-decoration-color: blue;
+}
+a:visited {
+  text-decoration-color: purple;
+}
+a:hover {
+  text-decoration-color: red;
 }
 
-a:hover {
-  color: #ec0000;
-  border-bottom: 2px solid #ec0000;
-  margin-bottom: -2px;
+h1, h2, h3, h4, h5, h6, nav {
+  font-family: 'Montserrat', sans-serif;
+  weight: 400;
 }
 
 /* Layout of the contents */
@@ -31,7 +39,7 @@ body, body>nav, body>footer {
   margin: 0 auto;
 }
 
-body>main, body>header, body>nav>ul {
+body>main, body>nav>ul {
   width: 100vw;
   max-width: 1000px;
   box-sizing: border-box;
@@ -42,7 +50,7 @@ body>main, body>header, body>nav>ul {
 /* The main navigation */
 body>nav {
   width: 100vw;
-  background-color: #444747;
+  /* background-color: #444747; */
 }
 
 body>nav>ul {
@@ -57,19 +65,29 @@ body>nav>ul>li {
 body>nav>ul>li>a:link, body>nav>ul>li>a:visited {
   font-weight: normal;
   font-size: 1.125em;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 500;
 }
 
 /* The header */
-header {
-  padding-top: 30px;
-  padding-bottom: 15px;
+body>header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-left: calc(- 17rem - 1.7rem);
+}
+header>#logo>img {
+  max-width: 17rem;
+}
+@media screen and (min-width: 1050px) {
+  body>header {
+    margin-left: calc(- 1.7rem);
+  }
 }
 
 /* The main content */
 main {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 main>article {
@@ -120,15 +138,13 @@ main>.cards {
 }
 main>.cards>a {
   display: block;
-  background: #f3f3f3;
+  background: #FEDF47;
   box-sizing: border-box;
   width: 100%;
   margin: 15px;
   min-width: 220px;
   max-width: 455px;
   min-height: 126px;
-  border-right: 3px solid rgb(229, 229, 229);
-  border-bottom: 3px solid rgb(229, 229, 229);  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -165,7 +181,7 @@ body>footer {
   margin: 0 15px;
 }
 body>footer, body>footer h3, body>footer a:link, body>footer a:visited {
-  background-color: #eeeeee;
+  background-color: #FEDF47;
   color: #3c4040;
   font-weight: normal;
   min-width: inherit;
