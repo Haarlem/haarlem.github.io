@@ -1,5 +1,7 @@
 ---
 abstract: Component for creating, storing and serving 'case types' compliant to ImZTC 2.1 with an API and web-interface
+tags: hlm
+hlmLayers: 4 5
 ---
 
 # Zaaktypecataloguscomponent
