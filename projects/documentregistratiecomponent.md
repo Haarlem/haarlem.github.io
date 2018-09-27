@@ -1,5 +1,7 @@
 ---
 abstract: Alfresco module for storing documents according to the TMLO standard
+tags: hlm
+hlmLayers: 4 5
 ---
 
 # Documentregistratiecomponent

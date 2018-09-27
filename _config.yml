@@ -9,5 +9,6 @@ defaults:
       path: "projects"
     values:
       layout: "projects"
+      isProject: true
 include: [README.md,CONTRIBUTING.md]
 permalink: pretty
