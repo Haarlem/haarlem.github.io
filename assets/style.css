@@ -107,7 +107,7 @@ main>aside {
   main>aside {
     display: inline-block;
     padding: 4.6em 0 4em 6em;   
-    max-width: 25%; 
+    max-width: 25%;
     vertical-align: top;
   }
 }
@@ -150,8 +150,10 @@ main>.cards>a {
   justify-content: flex-start;
   padding: 1em;
 }
+main>.cards>a:link, main>.cards>a:hover {
+  text-decoration: none;
+}
 main>.cards>a:hover {
-  border-right: 3px solid #ec0000;
   border-bottom: 3px solid #ec0000; 
 }
 main>.cards>a>p {
@@ -215,4 +217,33 @@ body>footer ul {
   list-style: none;
   padding: 0;
   margin-bottom: 10px;
+}
+
+ul.layers-map {
+  padding-left: 0;
+}
+ul.layers-map li {
+  background-color: #eee;
+  list-style: none;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+ul.layers-map li.layer1.select {
+  background-color: #9EB4C4;
+}
+ul.layers-map li.layer2.select {
+  background-color: #94E1F3;
+}
+ul.layers-map li.layer3.select {
+  background-color: #88E271;
+}
+ul.layers-map li.layer4.select {
+  background-color: #FEDF47;
+}
+ul.layers-map li.layer5.select {
+  background-color: #FF5860;
+}
+
+ul.layers-map li>* {
+  display: inline;
 }
