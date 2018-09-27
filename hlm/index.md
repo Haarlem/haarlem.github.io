@@ -11,7 +11,7 @@ We've chosen to adhere to a strict five-layer architecture in our systems. This 
 
 The Horizontal Layers Model consists architecture layers are:
 
-{% include layers.html select = '1 2 3 4 5'%}
+{% include layers.html select = '1 2 3 4 5' %}
 
 All of the components and tools we develop adhere to this architecture and combine easily into a platform.
 

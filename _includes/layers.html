@@ -1,7 +1,27 @@
 <ul class="layers-map">
-  <li class="layer1 {% if include.select contains '1' %}select{% endif %}"><h4>1. Interaction</h4> Front-end applications, websites, apps</li>
-  <li class="layer2 {% if include.select contains '2' %}select{% endif %}"><h4>2. Control</h4> Business Process Engines and Decision Engines, Domain-specific 'silo' applications</li>
-  <li class="layer3 {% if include.select contains '3' %}select{% endif %}"><h4>3. Integration</h4> Streams, proxies, connectors, adaptors</li>
-  <li class="layer4 {% if include.select contains '4' %}select{% endif %}"><h4>4. Services</h4> Publication and mutation of data through APIs</li>
-  <li class="layer5 {% if include.select contains '5' %}select{% endif %}"><h4>5. Data</h4> Databases, archives</li>
+  <li class="layer1 {% if include.select contains '1' %}select{% endif %}">
+    <img src="{{ site.baseUrl }}/assets/hlm-layer-1.svg">
+    <h4>Interaction</h4> 
+    <p>Front-end applications, websites, apps</p>
+  </li>
+  <li class="layer2 {% if include.select contains '2' %}select{% endif %}">
+    <img src="{{ site.baseUrl }}/assets/hlm-layer-2.svg">
+    <h4>Control</h4> 
+    <p>Business Process Engines and Decision Engines, Domain-specific 'silo' applications</p>
+  </li>
+  <li class="layer3 {% if include.select contains '3' %}select{% endif %}">
+    <img src="{{ site.baseUrl }}/assets/hlm-layer-3.svg">
+    <h4>Integration</h4> 
+    <p>Streams, proxies, connectors, adaptors</p>
+  </li>
+  <li class="layer4 {% if include.select contains '4' %}select{% endif %}">
+    <img src="{{ site.baseUrl }}/assets/hlm-layer-4.svg">
+    <h4>Services</h4> 
+    <p>Publication and mutation of data through APIs</p>
+  </li>
+  <li class="layer5 {% if include.select contains '5' %}select{% endif %}">
+    <img src="{{ site.baseUrl }}/assets/hlm-layer-5.svg">
+    <h4>Data</h4> 
+    <p>Databases, archives</p>
+  </li>
 </ul>

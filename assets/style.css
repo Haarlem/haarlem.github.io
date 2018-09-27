@@ -227,21 +227,29 @@ ul.layers-map li {
   list-style: none;
   padding: 0.5em;
   margin: 0.5em 0;
+  clear: both;
+  min-height: 3em;
+}
+ul.layers-map li img {
+  max-width: 2em;
+  float: right;
+  background: none;
+  margin-left: .5em;
 }
 ul.layers-map li.layer1.select {
   background-color: #9EB4C4;
 }
 ul.layers-map li.layer2.select {
-  background-color: #94E1F3;
+  background-color: #FF5860;
 }
 ul.layers-map li.layer3.select {
   background-color: #88E271;
 }
 ul.layers-map li.layer4.select {
-  background-color: #FEDF47;
+  background-color: #94E1F3;
 }
 ul.layers-map li.layer5.select {
-  background-color: #FF5860;
+  background-color: #FEDF47;
 }
 
 ul.layers-map li>* {
