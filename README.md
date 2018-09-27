@@ -1,4 +1,6 @@
-[![Gemeente Haarlem](assets/foot_logo_haarlem_2018.png)](https://haarlem.github.io)
+<p align="center">
+  <img width="300" src="assets/haarlem-open-source-logo.svg">
+</p>
 
 # haarlem.github.io
 
