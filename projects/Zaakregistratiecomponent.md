@@ -1,7 +1,7 @@
 ---
 abstract: Component for storing and serving 'cases' compliant with the GEMMA RGBZ, RSGB and ImZTC standards.
 tags: hlm
-hlmLayers: 4 5
+hlmLayers: 4
 ---
 
 # Zaakregistratiecomponent
