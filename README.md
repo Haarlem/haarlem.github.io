@@ -2,7 +2,16 @@
   <img width="300" src="assets/haarlem-open-source-logo.svg">
 </p>
 
-A showcase of Gemeente Haarlem's Open Source work, a comprehensive guide on how to contribute to our projects and our vision how we believe Open Source software should be built for Haarlem.
+# [`haarlem.github.io`](https://haarlem.github.io/)
+
+[![Powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-blue.svg?style=flat-square)](https://jekyllrb.com/)
+[![Published on GitHub pages](https://img.shields.io/badge/published_on-GitHub_pages-green.svg?style=flat-square)](https://pages.github.com/)
+
+> A showcase of Gemeente Haarlem's Open Source, a guide on how to contribute and our vision how software should be built.
+
+The goal of this project is to enable other local governments to learn from, reuse and contribute to the software maintained by us.
+
+Using built-in-to-GitHub static site generator Jekyll the content of this repostitory automatically builts into the website that can be found at [`haarlem.github.io`](https://haarlem.github.io/). This means updating this page means just updating the files in this repository through standard pull requests.
 
 ---
 
@@ -28,7 +37,7 @@ explains: How to add guides, add pages and change this website
 
 ### Adding a Project
 
-To add a project just make a new markdown file in `/projects/`. Add an `abstract` in the front matter as a short description of what the product is. 
+To add a project just make a new markdown file in `/projects/`. Add an `abstract` in the front matter as a short description of what the product is.
 
 You can either make a new Project page on this site or link directly to an external repo or product page by adding a `link` property to the front matter.
 
@@ -36,6 +45,8 @@ You can either make a new Project page on this site or link directly to an exter
 ---
 title: Zaakregistratiecomponent
 abstract: Component for storing and serving 'cases' compliant with the GEMMA RGBZ, RSGB and ImZTC standards.
+tags: hlm # Add HLM for it to be added to the HLM overview on the HLM page
+hlmLayers: 4 5 # The layers in the HLM architecture that this project touches seperated by spaces
 ---
 ```
 
@@ -43,7 +54,7 @@ abstract: Component for storing and serving 'cases' compliant with the GEMMA RGB
 
 ## Installing, running and building
 
-This site and it's contents are served over [GitHub pages](http://pages.github.com) and redered in it's native static site genrator [Jekyll](http://jekyllrb.com).
+This site and it's contents are served over [GitHub pages](http://pages.github.com) and built by it's native static site generator [Jekyll](http://jekyllrb.com).
 
 More on [Jekyll as a static site generator with GitHub](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
 
