@@ -189,7 +189,7 @@ body>footer, body>footer h3, body>footer a:link, body>footer a:visited {
   min-width: inherit;
 }
 
-body>footer a:link:before, body>footer a:visited:before, 
+/* body>footer a:link:before, body>footer a:visited:before, 
 aside li>a:link:before, aside li>a:visited:before {
   font-family: Avenir,Arial,sans-serif;  
   display: inline-block;
@@ -199,7 +199,7 @@ aside li>a:link:before, aside li>a:visited:before {
   line-height: 0;
   opacity: 0.5;
   margin-left: -0.75rem;
-}
+} */
 
 body>footer>* {
   width: 242.5px;
@@ -211,6 +211,12 @@ body>footer>* h3, body>footer h3>a:link {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+body>footer a:link, body>footer a:visited {
+  text-decoration-color: rgba(0,0,0,0.3);
+}
+body>footer a:hover {
+  text-decoration-color: rgba(0,0,0,1);
 }
 
 body>footer ul {
