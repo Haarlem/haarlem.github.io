@@ -21,3 +21,5 @@ We're looking for
 * software developers that can serve as implementation, support or development partners for us and other municipalities
 
 Please get in touch!
+
+![The handsome faces of our kick-ass development team](assets/team-photo.png)
