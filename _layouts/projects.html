@@ -19,7 +19,8 @@ layout: wrapper
 {% if page.hlmLayers %}
   <aside>
     <h3><a href="/{{ "hlm/#layers" | prepend: site.baseUrl }}">Layers</a></h3>
-    {% include layers.html select = page.hlmLayers %}
+    {% assign select = page.hlmLayers | split: ' ' %}
+    {% include layers.html select = select %}
   </aside>
 {% endif %}
 
