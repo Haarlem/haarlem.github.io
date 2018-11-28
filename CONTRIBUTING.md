@@ -1,5 +1,5 @@
 ---
-explains: How to contribute to this Open Source project
+explains: How to contribute to our Open Source projects
 layout: guides
 ---
 
